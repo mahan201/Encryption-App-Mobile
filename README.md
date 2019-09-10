@@ -15,4 +15,8 @@ Developed using Xamarin and C# and is compatible with Androind and iOS.
 
 The UI has been developed using Xamarin's Xamal elements and some 3rd party elements from the Syncfusion library.
 
-![alt txt](
+<img src="https://raw.githubusercontent.com/mahan201/Encryption-App-Mobile/master/Images/App%20(2).jpg" width=250>
+
+# Disclaimer
+
+The code for this program is public on this page and so I would not advise anyone to actually use this program to encrypt their files.

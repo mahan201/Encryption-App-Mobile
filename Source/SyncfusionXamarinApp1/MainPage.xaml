@@ -1,0 +1,325 @@
+    <?xml version="1.0" encoding="utf-8" ?>
+<backdrop:SfBackdropPage xmlns="http://xamarin.com/schemas/2014/forms"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         xmlns:local="clr-namespace:SyncfusionXamarinApp1"
+                         xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+                         xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+                         xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+                         xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+                         xmlns:textinput="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+			             x:Class="SyncfusionXamarinApp1.MainPage"
+                         Title="Real-time Encryption"
+                         BackLayerRevealOption="Auto" 
+                         xmlns:MyStuff="clr-namespace:SyncfusionXamarinApp1"
+                         xmlns:pop="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+                
+    
+    
+
+
+    <backdrop:SfBackdropPage.FrontLayer>
+
+        <backdrop:BackdropFrontLayer LeftCornerRadius="0"
+                                     RightCornerRadius="0"
+                                     BackgroundColor="#363636"
+                                     >
+
+            <tabview:SfTabView  DisplayMode="NoHeader"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                EnableSwiping="True"
+                                x:Name="TabTab"
+                                Margin="10,10"
+                                SelectionChanged="TabTab_SelectionChanged"
+                                >
+
+                <!--Real Time ENcryption Page-->
+                <tabview:SfTabItem Title="RealEnc">
+
+                    <tabview:SfTabItem.Content>
+
+                        <Grid RowSpacing="5"
+                              ColumnSpacing="5">
+
+                            
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40*"/>
+                                <RowDefinition Height="40*"/>
+                                <RowDefinition Height="2.5*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="7.5*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition Width="40*"/>
+                                <ColumnDefinition Width="40*"/>
+                                <ColumnDefinition Width="10*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <MyStuff:CustomEditor Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                    BackgroundColor="#626568" TextColor="White"
+                                    Text="Encrypted Text"
+                                    
+                                    x:Name="RealEnc_Fin"/>
+
+                            <Editor Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+                                    BackgroundColor="#626568" TextColor="White"
+                                    Text="Your Normal Text"
+                                    x:Name="RealEnc_Star" TextChanged="RealEnc_Star_TextChanged"/>
+
+                            <Label Text="Key:" TextColor="White" FontAttributes="Bold" FontSize="18"
+                                   Grid.Row="3" Grid.Column="1"
+                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Entry TextColor="White" BackgroundColor="#626568" Grid.Row="3" Grid.Column="2"
+                                   x:Name="RealEnc_Key" TextChanged="RealEnc_Star_TextChanged" FontSize="Small"
+                                   Margin="0,10"/>
+
+                            <Button Text="Random Key" TextColor="White" BackgroundColor="#626568"
+                                    Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                                    x:Name="RealEnc_Rand" Clicked="RealEnc_Rand_Clicked"
+                                    Margin="20,0"/>
+
+
+                        </Grid>
+
+                    </tabview:SfTabItem.Content>
+
+                </tabview:SfTabItem>
+
+                <!--Real Time Decryption Page-->
+                <tabview:SfTabItem Title="RealDec">
+
+                    <tabview:SfTabItem.Content>
+
+                        <Grid RowSpacing="5"
+                              ColumnSpacing="5">
+
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40*"/>
+                                <RowDefinition Height="40*"/>
+                                <RowDefinition Height="2.5*"/>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="7.5*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition Width="40*"/>
+                                <ColumnDefinition Width="40*"/>
+                                <ColumnDefinition Width="10*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <MyStuff:CustomEditor Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                    BackgroundColor="#626568" TextColor="White"
+                                    Text="Normal Text"
+                                    x:Name="RealDec_Fin"/>
+
+                            <Editor Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+                                    BackgroundColor="#626568" TextColor="White"
+                                    Text="Your Encrypted Text"
+                                    x:Name="RealDec_Star" TextChanged="RealDec_Star_TextChanged"/>
+
+                            <Label Text="Key:" TextColor="White" FontAttributes="Bold" FontSize="18"
+                                   Grid.Row="3" Grid.Column="1"
+                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+                        
+                            <Entry TextColor="White" BackgroundColor="#626568" Grid.Row="3" Grid.Column="2"
+                                   x:Name="RealDec_Key" TextChanged="RealDec_Star_TextChanged"
+                                   Margin="0,10"/>
+
+
+                        </Grid>
+
+                    </tabview:SfTabItem.Content>
+
+                </tabview:SfTabItem>
+
+
+                <!--File Encryption Page-->
+                <tabview:SfTabItem Title="FileEnc">
+
+                    <tabview:SfTabItem.Content>
+
+                        <Grid>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4.87*"/>
+                                <ColumnDefinition Width="21.235*"/>
+                                <ColumnDefinition Width="46.7*"/>
+                                <ColumnDefinition Width="21.235*"/>
+                                <ColumnDefinition Width="4.96*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="16.786*"/>
+                                <RowDefinition Height="23.432*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="9*"/>
+                                <RowDefinition Height="15.888*"/>
+                                <RowDefinition Height="34.894*"/>
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="FileEncIm" Grid.Row="1" Grid.Column="2"
+                                   Aspect="AspectFill"
+                            />
+
+
+                            <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" 
+                                   BackgroundColor="#626568" 
+                                   TextColor="#B5B5B5" Text="Tap to select text file" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                   FontAttributes="Bold" FontSize="Medium"
+                                   x:Name="fileEncIn"/>
+
+                            <Button Grid.Row="4" Grid.Column="2" Margin="0,25"
+                                    BackgroundColor="#626568" 
+                                    TextColor="White" Text="Encrypt" 
+                                    x:Name="FileEnc" Clicked="FileEnc_Clicked"
+                                    />
+                        </Grid>
+
+                    </tabview:SfTabItem.Content>
+
+                </tabview:SfTabItem>
+                
+                   
+               
+                
+                
+                <!--File Decryption Page-->
+                <tabview:SfTabItem Title="Item4">
+
+                    <tabview:SfTabItem.Content>
+
+                        <Grid>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4.87*"/>
+                                <ColumnDefinition Width="21.235*"/>
+                                <ColumnDefinition Width="46.7*"/>
+                                <ColumnDefinition Width="21.235*"/>
+                                <ColumnDefinition Width="4.96*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="16.786*"/>
+                                <RowDefinition Height="23.432*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="9*"/>
+                                <RowDefinition Height="15.888*"/>
+                                <RowDefinition Height="34.894*"/>
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="FileDecIm" Grid.Row="1" Grid.Column="2"
+                                   Aspect="AspectFill"/>
+
+                            <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" 
+                                   BackgroundColor="#626568" 
+                                   TextColor="#B5B5B5" Text="Tap to select text file" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                   FontAttributes="Bold" FontSize="Medium"
+                                   x:Name="FileDecIn"
+                                   />
+
+
+                            <Button Grid.Row="4" Grid.Column="2" Margin="0,25"
+                                    BackgroundColor="#626568" 
+                                    TextColor="White" Text="Decrypt" 
+                                    x:Name="FileDec" Clicked="FileDec_Clicked"
+                                    />
+                        </Grid>
+
+                    </tabview:SfTabItem.Content>
+
+                </tabview:SfTabItem>
+
+            </tabview:SfTabView>
+
+
+        </backdrop:BackdropFrontLayer>
+        
+    </backdrop:SfBackdropPage.FrontLayer>
+
+   
+    
+    
+    
+    <backdrop:SfBackdropPage.BackLayer>
+        
+        <backdrop:BackdropBackLayer>
+            
+            
+            <Grid RowSpacing="10"
+                  ColumnSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+
+               
+
+                <button:SfChip Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" Padding="10,5" 
+                              
+                              Text="Encryption" CornerRadius="10" BorderWidth="2" FontFamily="Roboto" FontSize="18" FontAttributes="Bold"
+                              
+                              BackgroundColor="#292929" BorderColor="White" TextColor="White"
+                              
+                              x:Name="EncChip" Clicked="EncChip_Clicked"
+
+                              />
+
+                <button:SfChip Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" Padding="10,5"
+                              
+                              Text="Decryption" CornerRadius="10" BorderWidth="2" FontFamily="Roboto" FontSize="18" FontAttributes="Bold"
+                    
+                              BackgroundColor="#292929" BorderColor="#292929" TextColor="White"
+
+                              x:Name="DecChip" Clicked="DecChip_Clicked"
+                              
+                              />
+
+                <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                      ColumnSpacing="0"
+                      Margin="0,0,0,10">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="15*"/>
+
+                    </Grid.ColumnDefinitions>
+                    
+                
+                    <button:SfChip Grid.Column="1" HorizontalOptions="FillAndExpand" Padding="10,5"
+                              
+                                  Text="Real-time" CornerRadius="10" BorderWidth="2" FontFamily="Roboto" FontSize="14" FontAttributes="Bold"
+                    
+                                  BackgroundColor="#292929" BorderColor="White" TextColor="White"
+                                   
+                                   x:Name="Real_chip" Clicked="Real_chip_Clicked"
+                              
+                                  />
+                
+                    <button:SfChip Grid.Column="2" HorizontalOptions="FillAndExpand" Padding="10,5"
+                              
+                                  Text="File" CornerRadius="10" BorderWidth="2" FontFamily="Roboto" FontSize="14" FontAttributes="Bold"
+                    
+                                  BackgroundColor="#292929" BorderColor="#292929" TextColor="White"
+                                    
+                                   x:Name="file_chip" Clicked="File_chip_Clicked"
+                                  />
+                    
+                </Grid>
+
+            </Grid>
+
+        </backdrop:BackdropBackLayer>
+        
+    </backdrop:SfBackdropPage.BackLayer>
+
+	
+
+</backdrop:SfBackdropPage>

@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\decryption.png" />
+    <None Remove="Assets\down.png" />
+    <None Remove="Assets\encryption.png" />
+    <None Remove="Assets\up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\decryption.png" />
+    <EmbeddedResource Include="Assets\down.png" />
+    <EmbeddedResource Include="Assets\encryption.png" />
+    <EmbeddedResource Include="Assets\up.png" />
+  </ItemGroup>
+
+<ItemGroup>
+<PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
+<PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
+<PackageReference Include="Syncfusion.Xamarin.SfBackdrop" Version="17.1.0.53" />
+<PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="16.4.0.52" />
+<PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="17.1.0.53" />
+<PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="17.1.0.53" />
+<PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="17.1.0.53" />
+<PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+<PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.1.0.47" />
+<PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.1.18" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ViewFile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

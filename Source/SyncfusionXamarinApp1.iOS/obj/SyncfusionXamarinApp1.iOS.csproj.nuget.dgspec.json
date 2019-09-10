@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.iOS\\SyncfusionXamarinApp1.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.iOS\\SyncfusionXamarinApp1.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.iOS\\SyncfusionXamarinApp1.iOS.csproj",
+        "projectName": "SyncfusionXamarinApp1.iOS",
+        "projectPath": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.iOS\\SyncfusionXamarinApp1.iOS.csproj",
+        "packagesPath": "C:\\Users\\m2noo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\m2noo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.csproj": {
+                "projectPath": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[17.1.0.47, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.1.0.697729, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.csproj",
+        "projectName": "SyncfusionXamarinApp1",
+        "projectPath": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1.csproj",
+        "packagesPath": "C:\\Users\\m2noo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m2noo\\source\\repos\\Xamarin\\SyncfusionXamarinApp1\\SyncfusionXamarinApp1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\m2noo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[3.0.0.12, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[1.1.5.188, )"
+            },
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[17.1.0.47, )"
+            },
+            "Syncfusion.Xamarin.SfBackdrop": {
+              "target": "Package",
+              "version": "[17.1.0.53, )"
+            },
+            "Syncfusion.Xamarin.SfMaskedEdit": {
+              "target": "Package",
+              "version": "[16.4.0.52, )"
+            },
+            "Syncfusion.Xamarin.SfPopupLayout": {
+              "target": "Package",
+              "version": "[17.1.0.53, )"
+            },
+            "Syncfusion.Xamarin.SfPullToRefresh": {
+              "target": "Package",
+              "version": "[17.1.0.53, )"
+            },
+            "Syncfusion.Xamarin.SfTabView": {
+              "target": "Package",
+              "version": "[17.1.0.53, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.1.0.697729, )"
+            },
+            "Xamarin.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[2.1.18, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

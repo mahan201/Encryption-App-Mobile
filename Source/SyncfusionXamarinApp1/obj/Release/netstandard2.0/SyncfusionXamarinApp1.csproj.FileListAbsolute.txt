@@ -1,0 +1,12 @@
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\bin\Release\netstandard2.0\SyncfusionXamarinApp1.deps.json
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\bin\Release\netstandard2.0\SyncfusionXamarinApp1.dll
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\bin\Release\netstandard2.0\SyncfusionXamarinApp1.pdb
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\ViewFile.xaml.g.cs
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\SyncfusionXamarinApp1.csproj.CoreCompileInputs.cache
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\SyncfusionXamarinApp1.AssemblyInfoInputs.cache
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\SyncfusionXamarinApp1.AssemblyInfo.cs
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\SyncfusionXamarinApp1.dll
+C:\Users\Mahan\source\repos\SyncfusionXamarinApp1\SyncfusionXamarinApp1\obj\Release\netstandard2.0\SyncfusionXamarinApp1.pdb

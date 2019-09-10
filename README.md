@@ -14,6 +14,7 @@ Developed using Xamarin and C# and is compatible with Androind and iOS.
 # User Interface
 
 The UI has been developed using Xamarin's Xamal elements and some 3rd party elements from the Syncfusion library.
+More images can be found in the [Images folder](https://github.com/mahan201/Encryption-App-Mobile/tree/master/Images)
 
 <img src="https://raw.githubusercontent.com/mahan201/Encryption-App-Mobile/master/Images/App%20(2).jpg" width=250>
 

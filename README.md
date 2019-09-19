@@ -1,6 +1,6 @@
 # Encryption Mobile App 
 The Mobile application for my [Windows encryption program.](https://github.com/mahan201/Encryption-Program-Desktop)
-Developed using Xamarin and C# and is compatible with Androind and iOS.
+Developed using Xamarin and C# and is compatible with Android and iOS.
 
 # Features
 
